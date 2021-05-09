@@ -29,7 +29,7 @@ public class AuthenticationInterceptor implements ContainerRequestFilter {
     @Inject
     UsuarioService usuarioService;
 
-    private static final String AUTHENTICATION_SCHEME = "BASIC";
+    private static final String AUTHENTICATION_SCHEME = "Basic";
 
     @Override
     public void filter(ContainerRequestContext req) {
