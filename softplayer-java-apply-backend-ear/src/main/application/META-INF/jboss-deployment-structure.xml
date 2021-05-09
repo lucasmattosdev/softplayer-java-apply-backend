@@ -1,0 +1,7 @@
+<jboss-deployment-structure>
+    <ear-subdeployments-isolated>false</ear-subdeployments-isolated>
+    <sub-deployment name="softplayer-java-apply-backend-resource.war">
+        <dependencies>
+        </dependencies>
+    </sub-deployment>
+</jboss-deployment-structure>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>softplayer-java-apply</artifactId>
+        <groupId>br.com.lucasmattos.softplayer.java.apply</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>softplayer-java-apply-backend-ear</artifactId>
+    <packaging>ear</packaging>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>br.com.lucasmattos.softplayer.java.apply</groupId>
+            <artifactId>softplayer-java-apply-backend-resource</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>2.8</version>
+                <configuration>
+                    <version>6</version>
+                    <defaultLibBundleDir>/lib</defaultLibBundleDir>
+                    <modules>
+                        <webModule>
+                            <groupId>br.com.lucasmattos.softplayer.java.apply</groupId>
+                            <artifactId>softplayer-java-apply-backend-resource</artifactId>
+                            <bundleFileName>softplayer-java-apply-backend-resource.war</bundleFileName>
+                            <context-root>/</context-root>
+                        </webModule>
+                    </modules>
+                </configuration>
+            </plugin>
+
+        </plugins>
+        <finalName>softplayer-java-apply-backend-ear</finalName>
+    </build>
+
+</project>
