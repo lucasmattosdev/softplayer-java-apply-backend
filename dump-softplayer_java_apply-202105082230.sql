@@ -134,7 +134,7 @@ INSERT INTO app.usuario VALUES (1, 'soft', 'a665a45920422f9d417e4867efdc4fb8a04a
 -- Name: pessoa_id_seq; Type: SEQUENCE SET; Schema: app; Owner: -
 --
 
-SELECT pg_catalog.setval('app.pessoa_id_seq', 0, true);
+SELECT pg_catalog.setval('app.pessoa_id_seq', 1, true);
 
 
 --
@@ -143,7 +143,7 @@ SELECT pg_catalog.setval('app.pessoa_id_seq', 0, true);
 -- Name: usuario_id_seq; Type: SEQUENCE SET; Schema: app; Owner: -
 --
 
-SELECT pg_catalog.setval('app.usuario_id_seq', 1, true);
+SELECT pg_catalog.setval('app.usuario_id_seq', 2, true);
 
 
 --
