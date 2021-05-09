@@ -7,7 +7,7 @@ Aplicação para o teste prático de cargo Desenvolvedor Fullstack na Softplan, 
 CRUD de Pessoa com autenticação Basic.
 
 ```bash
-pip install foobar
+https://github.com/softplan/softplayer-java-apply
 ```
 
 ## Execução
