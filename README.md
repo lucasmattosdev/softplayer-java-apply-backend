@@ -14,6 +14,7 @@ https://github.com/softplan/softplayer-java-apply
 
 Utilize Wildfly como servidor Web a ser utilizado por esta aplicação.
 
+### Preparação
 No projeto há o script `docker/init.sql` que contem toda a estrutura do banco a ser utilizada por este sistema.
 
 Caso não possua o driver do Postgresql, utilize o driver localizado em `docker/postgresql-42.2.14.jar` e suba junto no servidor.
@@ -35,7 +36,15 @@ mvn clean install
 ```
 Após compilado, basta subir o EAR no servidor Wildfly, localizado em `softplayer-java-apply-backend-ear/target/softplayer-java-apply-backend-ear.ear`
 
-Obs: Veja o módulo [Frontend](https://github.com/lucasmattooos/softplayer-java-apply-frontend) deste projeto para complementar o backend e levantar a interface do usuário.
+### Credenciais
+Utilize as credenciais abaixo para acessar a aplicação
+```bash
+Usuario: soft
+Senha: 123
+```
+
+### Observações
+Veja o módulo [Frontend](https://github.com/lucasmattooos/softplayer-java-apply-frontend) deste projeto para complementar o backend e levantar a interface do usuário.
 
 ## License
 © 2021 [Lucas Mattos](https://www.lucasmattos.com.br/). Todos os direitos reservados.
