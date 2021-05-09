@@ -10,7 +10,9 @@ CRUD de Pessoa com autenticação Basic.
 pip install foobar
 ```
 
-## Aplicação
+## Execução
+
+Utilize Wildfly como servidor Web a ser utilizado por esta aplicação.
 
 No projeto há o script `docker/init.sql` que contem toda a estrutura do banco a ser utilizada por este sistema.
 
@@ -31,6 +33,7 @@ Para rodar, devemos compilar o projeto com `MAVEN`:
 ```bash
 mvn clean install
 ```
+Após compilado, basta subir o EAR no servidor Wildfly, localizado em `softplayer-java-apply-backend-ear/target/softplayer-java-apply-backend-ear.ear`
 
 Obs: Veja o módulo [Frontend](https://github.com/lucasmattooos/softplayer-java-apply-frontend) deste projeto para complementar o backend e levantar a interface do usuário.
 
