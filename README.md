@@ -47,4 +47,4 @@ Senha: 123
 Veja o módulo [Frontend](https://github.com/lucasmattooos/softplayer-java-apply-frontend) deste projeto para complementar o backend e levantar a interface do usuário.
 
 ## License
-© 2021 [Lucas Mattos](https://www.lucasmattos.com.br/). Todos os direitos reservados.
+© 2021 [Lucas Mattos](https://lucasmattos.dev). Todos os direitos reservados.
