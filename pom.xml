@@ -11,7 +11,7 @@
   <packaging>pom</packaging>
 
   <name>softplayer-java-apply</name>
-  <url>http://www.lucasmattos.com.br/softplayer-java-apply</url>
+  <url>http://www.lucasmattos.dev/softplayer-java-apply</url>
 
   <modules>
     <module>softplayer-java-apply-backend-resource</module>
